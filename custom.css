@@ -57,11 +57,12 @@
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    text-shadow:
-        2px 2px 0px white,
-        -2px 2px 0px white,
-        2px -2px 0px white,
-        -2px -2px 0px white; /* 縁取り */
+}
+
+.title span {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 15px;
 }
 
 .title a {

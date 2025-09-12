@@ -63,7 +63,7 @@
                             <?php echo wp_trim_words( get_the_content(), 50, '...' ); ?>
                             <div class="image" style="background-image: url('<?php echo esc_url($thumbnail_url); ?>');">                        
                                 <h4 class="title">
-                                    <?php the_title(); ?>
+                                    <span><?php echo wp_trim_words( get_the_title(), 25, '...' ); ?></span>
                                 </h4>
                             </div>
                         </div>
