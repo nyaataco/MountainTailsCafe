@@ -1,6 +1,10 @@
 <div id="events">
 
-<?php get_header(); ?>
+<?php 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+get_header(); ?>
 
 <?php if ( astra_page_layout() === 'left-sidebar' ) { ?>
 
@@ -48,29 +52,31 @@
 
 		<?php if ( have_posts() ) : ?>
             <div class="event-list">
-                <?php while ( have_posts() ) : the_post(); ?>
+                <?php 
+                    $terms = get_terms(array(
+                    'taxonomy' => 'event_category',
+                    'hide_empty' => false,
+                    ));
 
-                    <?php
-                        if ( has_post_thumbnail() ) :
-                            $thumbnail_url = get_the_post_thumbnail_url() ; 
+                    foreach ($terms as $term) {
+                        $image_url = get_term_meta($term->term_id, 'term_image', true);
+                        if ($image_url) :
+                            $thumbnail_url = $image_url ; 
                         else:
-                            $thumbnail_url = get_stylesheet_directory_uri() . 'event-sample-image.png';
+                            $thumbnail_url = get_stylesheet_directory_uri() . '/sample-image.jpg';
                         endif;
-                    ?>
-                    <a href="<?php the_permalink(); ?>">
+                ?>
+                    <a href="<?php echo get_term_link($term) ?>">
                         <div class="item">
-                            <span class="date"><?php echo get_the_date(); ?></span>
-                            <?php echo wp_trim_words( get_the_content(), 50, '...' ); ?>
                             <div class="image" style="background-image: url('<?php echo esc_url($thumbnail_url); ?>');">                        
                                 <h4 class="title">
-                                    <span><?php echo wp_trim_words( get_the_title(), 25, '...' ); ?></span>
+                                    <?php echo wp_trim_words( esc_html($term->name), 25, '...' ); ?>
                                 </h4>
                             </div>
+                            <p class="description"><?php echo esc_html($term->description) ?></p>
                         </div>
-                        
-                        
                     </a>
-                <?php endwhile; ?>
+                <?php } ?>
             </div>
         <?php else : ?>
             <p>イベントが見つかりませんでした。</p>

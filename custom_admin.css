@@ -1,0 +1,19 @@
+#term_image {
+    margin-bottom: 10px;
+}
+
+.term_image_preview {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.term_image_preview img {
+    max-width: 150px;
+    height: auto;
+}
+
+.upload_image_button {
+    margin-left: 3px !important;
+    margin-right: 10px !important;
+}

@@ -38,3 +38,15 @@ textarea#comment {
 .copyright {
     color: var(--ast-global-color-3);
 }
+
+/* archive */
+.ast-article-post .post-thumb-img-content img {
+    aspect-ratio: auto;
+}
+
+.published:before {
+    font-family: dashicons;
+    content: "\f145";
+    margin-right: 2px;
+    vertical-align: bottom;
+}

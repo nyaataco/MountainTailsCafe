@@ -1,12 +1,14 @@
+/* archive-event */
+
 #events {
     background-color:#fff !important;
 }
 
 #events article {
-    padding: 3em 0;
+    padding: 0 3em 3em 3em;
 }
 
-.event-list {
+#events .event-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
@@ -14,35 +16,25 @@
     padding-bottom: 80px;
 }
 
-.event-list a {
+@media screen and (max-width: 782px) {
+	#events .event-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+#events .event-list a {
     display: block;
 }
 
-.date {
-    display: block;
-}
-
-.date:before {
-    font-family: dashicons;
-    content: "\f145";
-    margin-right: 10px;
-    vertical-align: bottom;
-}
-
-.description {
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.image::before {
+#events .image::before {
     content: "";
     position: absolute;
     z-index: 0;
     inset: 0;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.5);
 }
 
-.image {
+#events .image {
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -50,22 +42,69 @@
     z-index: 0;
 }
 
-.title {
+#events .title {
     position: relative;
     z-index: 1;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0;
+    padding: 30px;
 }
 
-.title span {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px 15px;
-    border-radius: 15px;
-}
-
-.title a {
+#events .title a {
     color: var(--ast-global-color-3);
 }
 
+#events .description {
+    color: var(--ast-global-color-3);
+}
+
+/* taxonomy-event_category */
+
+#archive-event {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 782px) {
+	#archive-event{
+        grid-template-columns: 1fr;
+    }
+}
+
+#archive-event .box {
+    background: #fff;
+    border-radius: 6px;
+}
+
+#archive-event .image {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    border-radius: 6px 6px 0 0;
+    height: 200px;
+}
+
+#archive-event .info {
+    padding: 20px;
+}
+
+#archive-event .title {
+    line-height: 1.3em;
+    margin-bottom: 0.6em;
+}
+
+#archive-event .event-date {
+    color: var(--ast-global-color-3);
+}
+
+#archive-event .event-date > span {
+    font-weight: 800;
+    font-size: larger;
+    display: block;
+}
+
+/* single-event */
