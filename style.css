@@ -13,6 +13,22 @@ Version: 1.0
     background-color: var(--ast-global-color-3);
 }
 
+/* menu */
+.astra-dark-mode-enable .main-header-menu .sub-menu {
+    background-color: var(--ast-global-color-3);
+}
+
+@media (max-width: 976px) {
+    [data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-toggle-icon .ast-mobile-svg {
+        fill: var(--ast-global-color-4);
+    }
+
+    .header-title,
+    .header-text {
+        color: var(--ast-global-color-4) !important;
+    }
+}
+
 /* post page */
 .sidebar-main {
     background-color: var(--ast-global-color-4) !important;
@@ -49,4 +65,32 @@ textarea#comment {
     content: "\f145";
     margin-right: 2px;
     vertical-align: bottom;
+}
+
+/* footer */
+@media (max-width: 921px) {
+    .ast-builder-grid-row-container.ast-builder-grid-row-tablet-2-equal .ast-builder-grid-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 921px) {
+    .footer-nav-wrap {
+        margin-left: 10%;
+    }
+
+    .footer-widget-area[data-section="section-footer-menu"] .astra-footer-tablet-vertical-menu {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 20px;
+    }
+
+     #astra-footer-menu .menu-item {
+        align-items: start;
+     }
+}
+
+@media only screen and (max-width: 767px) {
+    .wp-block-uagb-container.uagb-block-4ff5c747 {
+        margin-bottom: 0 !important;
+    }
 }

@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
             custom_uploader.on('select', function() {
                 var attachment = custom_uploader.state().get('selection').first().toJSON();
                 inputField.val(attachment.url);
-                $('.term_image').prev('.term_image_preview').html('<img src="' + attachment.url + '">');
+                inputField.closest('.form-field, td').find('.term_image_preview').html('<img src="' + attachment.url + '">');
             });
 
             custom_uploader.open();
@@ -26,10 +26,11 @@ jQuery(document).ready(function($) {
         // 入力欄が変更されたらプレビューも更新
         $('#term_image').on('input', function() {
             var url = $(this).val();
+            var preview = $(this).closest('.form-field, td').find('.term_image_preview');
             if (url) {
-                $('#term_image').prev('.term_image_preview').html('<img src="' + url + '">');
+                preview.html('<img src="' + url + '">');
             } else {
-                $('#term_image').prev('.term_image_preview').empty();
+                preview.empty();
             }
         });
         
@@ -39,8 +40,5 @@ jQuery(document).ready(function($) {
             $('#term_image').val('');
             $('.term_image_preview').empty();
         });
-
-
     }
 });
-
