@@ -1,7 +1,7 @@
 # WordPressカスタマイズ(astra-child)
 
 WordPress、Astraのテーマをカスタマイズしました。  
-カスタム投稿タイプ、カスタムタクソノミーを追加、それに伴ったcategory, archive, singleページを作成、スタイルを調整しています。 
+カスタム投稿タイプ、カスタムタクソノミーを追加、それに伴ったcategory, archive, singleページを作成、スタイルを調整しています。  
 架空の「ペットと一緒に行ける山のカフェ」をテーマに、イベント情報の管理などを実装しています。
 
 ---
@@ -22,6 +22,54 @@ WordPress、Astraのテーマをカスタマイズしました。
 - HTML / CSS / JavaScript / jQuery
 - Photoshop (写真の補正)
 - Illustratoe (sample素材の作成)
+
+---
+
+## images
+
+**管理画面のイメージ**
+<br>
+<div>
+    イベント一覧 (カスタム投稿) :<br>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event.jpg" width="80%" alt="イベント一覧 (カスタム投稿)のイメージ" />
+</div>
+<br><br>
+<div>
+    イベントカテゴリー (カスタムカテゴリー) :<br>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event2.jpg" width="80%" alt="イベントカテゴリー(カスタムカテゴリー)のイメージ" />
+</div>
+<br><br>
+<div>
+    <p>カテゴリー編集ページ（画像アップ機能付き）:</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event3.jpg" width="80%" alt="カテゴリー編集ページ（画像アップ機能付き）のイメージ" />
+</div>
+<br><br>
+<div>
+    <p>カスタム投稿編集ページ（イベント日付入力機能付き）:</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event4.jpg" width="80%" alt="カスタム投稿編集ページ（イベント日付入力機能付き）のイメージ" />
+</div>
+<br><br>
+
+**wordpressのイメージ**
+<br>
+<div>
+    <p>taxonomy-event_category.php:</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/taxonomy-event_category.jpg" width="80%" alt="taxonomy-event_category.phpのイメージ" />
+</div>
+<br><br>
+<div>
+    archive-event.php:<br>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/archive-event.jpg" width="80%" alt="archive-event.phpのイメージ" />
+</div>
+<br><br>
+<div>
+    archive-event.php:<br>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/archive-event.jpg" width="80%" alt="archive-event.phpのイメージ" />
+</div>
+<br><br>
+
+※ このサイトはポートフォリオ作成のためのもので、実在する店舗ではありません。  
+※ This site was created as part of a portfolio project. The café and its events are entirely fictional.
 
 ---
 
