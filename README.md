@@ -12,6 +12,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 - カスタム投稿タイプ「event」＋カスタムタクソノミー「event_category」
 - アイキャッチ画像の登録・プレビュー機能（JavaScript＋WordPressメディアアップローダー）
 - WordPress管理画面のカスタマイズ（カテゴリー編集画面に画像フィールド追加）
+- もともとのテーマのデザイン調整はstyle.css、追加したEventカテゴリー関係はcustom.css, custom_admin.cssでスタイル調整しています。
 
 
 ---
