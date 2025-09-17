@@ -17,7 +17,7 @@ get_header(); ?>
 
 		<?php astra_archive_header(); ?>
 
-        <div id="archive-event">
+        <div id="event-category">
 		<?php
             if ( have_posts() ) :
             while ( have_posts() ) :

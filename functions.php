@@ -4,7 +4,7 @@ function astra_child_enqueue_styles() {
     wp_enqueue_style( 'astra-child-style', get_stylesheet_uri(), array( 'astra-theme-css' ), '1.0.0' );
 }
 
-// 追加したページ用のstyle
+// 追加したページ用css
 function custom_styles() {
   wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/custom.css' );
 }
