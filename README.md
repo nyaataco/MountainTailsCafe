@@ -22,7 +22,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 - WordPress（ブロックエディタ + PHP）
 - HTML / CSS / JavaScript / jQuery
 - Photoshop (写真の補正)
-- Illustratoe (sample素材の作成)
+- Illustrator (sample素材の作成)
 
 ---
 
