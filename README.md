@@ -35,7 +35,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 </div>
 <br><br>
 <div>
-    イベントカテゴリー (カスタムカテゴリー) :<br>
+    <p>イベントカテゴリー (カスタムカテゴリー) :</p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event2.jpg" width="80%" alt="イベントカテゴリー(カスタムカテゴリー)のイメージ" />
 </div>
 <br><br>
@@ -53,18 +53,20 @@ WordPress、Astraのテーマをカスタマイズしました。
 🏞️ **wordpressのイメージ**
 <br>
 <div>
-    <p>taxonomy-event_category.php:</p>
+    <p>
+        taxonomy-event_category.php:<br>親テーマを引き継ぎつつEvent Date表示エリアを追加
+    </p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/taxonomy-event_category.jpg" width="80%" alt="taxonomy-event_category.phpのイメージ" />
 </div>
 <br><br>
 <div>
-    archive-event.php:<br>
+     <p>archive-event.php:<br>好きな画像を設定できます。画像がなければsample-image.jpgを表示</p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/archive-event.jpg" width="80%" alt="archive-event.phpのイメージ" />
 </div>
 <br><br>
 <div>
-    archive-event.php:<br>
-    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/archive-event.jpg" width="80%" alt="archive-event.phpのイメージ" />
+     <p>single-event.php:<br>設定した日付とアイキャッチ画像を含んだ内容が投稿されます</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/single-event.jpg" width="80%" alt="single-event.phpのイメージ" />
 </div>
 <br><br>
 
