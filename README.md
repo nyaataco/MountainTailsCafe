@@ -27,7 +27,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 
 ## images
 
-**管理画面のイメージ**
+🧩**管理画面のイメージ**
 <br>
 <div>
     イベント一覧 (カスタム投稿) :<br>
@@ -50,7 +50,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 </div>
 <br><br>
 
-**wordpressのイメージ**
+🏞️ **wordpressのイメージ**
 <br>
 <div>
     <p>taxonomy-event_category.php:</p>
