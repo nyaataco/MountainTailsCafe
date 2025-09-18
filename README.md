@@ -30,32 +30,45 @@ WordPress、Astraのテーマをカスタマイズしました。
 
 🧩**管理画面のイメージ**
 <br>
-### イベント一覧 (カスタム投稿) :  
-    ![カスタム投稿](https://raw.githubusercontent.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event.jpg)
+<div>
+    <p>イベント一覧 (カスタム投稿) :</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event.jpg" width="80%" alt="イベント一覧 (カスタム投稿)のイメージ" />
+</div>
 <br><br>
-### イベントカテゴリー (カスタムカテゴリー) :  
-    ![カスタムカテゴリー](https://raw.githubusercontent.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event2.jpg)
+<div>
+    <p>イベントカテゴリー (カスタムカテゴリー) :</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event2.jpg" alt="イベントカテゴリー(カスタムカテゴリー)のイメージ" />
+</div>
 <br><br>
-### カテゴリー編集ページ（画像アップ機能付き）:  
-    ![カテゴリー編集ページ、画像アップ機能付き](https://raw.githubusercontent.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event3.jpg)
+<div>
+    <p>カテゴリー編集ページ（画像アップ機能付き）:</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event3.jpg" alt="カテゴリー編集ページ（画像アップ機能付き）のイメージ" />
+</div>
 <br><br>
-### カスタム投稿編集ページ（イベント日付入力機能付き）:  
-    ![カスタム投稿編集ページ、イベント日付入力機能付き](https://raw.githubusercontent.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event4.jpg)
+<div>
+    <p>カスタム投稿編集ページ（イベント日付入力機能付き）:</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event4.jpg" alt="カスタム投稿編集ページ（イベント日付入力機能付き）のイメージ" />
+</div>
 <br><br>
 
 🏞️ **wordpressのイメージ**
 <br>
-### taxonomy-event_category.php:  
-親テーマを引き継ぎつつEvent Date表示エリアを追加  
-    ![taxonomy-event_category.php](https://raw.githubusercontent.com/nyaataco/MountainTailsCafe/blob/main/images/taxonomy-event_category.jpg)
+<div>
+    <p>
+        taxonomy-event_category.php:<br>親テーマを引き継ぎつつEvent Date表示エリアを追加
+    </p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/taxonomy-event_category.jpg" alt="taxonomy-event_category.phpのイメージ" />
+</div>
 <br><br>
-### archive-event.php:  
-好きな画像を設定できます。画像がなければsample-image.jpgを表示  
-    ![archive-event.php](https://raw.githubusercontent.com/nyaataco/MountainTailsCafe/blob/main/images/archive-event.jpg)
+<div>
+     <p>archive-event.php:<br>好きな画像を設定できます。画像がなければsample-image.jpgを表示</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/archive-event.jpg" alt="archive-event.phpのイメージ" />
+</div>
 <br><br>
-### single-event.php:  
-設定した日付とアイキャッチ画像を含んだ内容が投稿されます  
-    ![single-event.php](https://raw.githubusercontent.com/nyaataco/MountainTailsCafe/blob/main/images/single-event.jpg)
+<div>
+     <p>single-event.php:<br>設定した日付とアイキャッチ画像を含んだ内容が投稿されます</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/single-event.jpg" alt="single-event.phpのイメージ" />
+</div>
 <br><br>
 
 ※ このサイトはポートフォリオ作成のためのもので、実在する店舗ではありません。  
