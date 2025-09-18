@@ -32,7 +32,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 <br>
 <div>
     <p>イベント一覧 (カスタム投稿) :</p>
-    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event.jpg" width="80%" alt="イベント一覧 (カスタム投稿)のイメージ" />
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event.jpg" alt="イベント一覧 (カスタム投稿)のイメージ" />
 </div>
 <br><br>
 <div>
