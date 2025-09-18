@@ -31,16 +31,16 @@ WordPress、Astraのテーマをカスタマイズしました。
 🧩**管理画面のイメージ**
 <br>
 ### イベント一覧 (カスタム投稿) :  
-    ![イベント一覧 (カスタム投稿)](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event.jpg)
+    ![カスタム投稿](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event.jpg)
 <br><br>
 ### イベントカテゴリー (カスタムカテゴリー) :  
-    ![イベントカテゴリー (カスタムカテゴリー)](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event2.jpg)
+    ![カスタムカテゴリー](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event2.jpg)
 <br><br>
 ### カテゴリー編集ページ（画像アップ機能付き）:  
-    ![カテゴリー編集ページ（画像アップ機能付き）](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event3.jpg)
+    ![カテゴリー編集ページ、画像アップ機能付き](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event3.jpg)
 <br><br>
 ### カスタム投稿編集ページ（イベント日付入力機能付き）:  
-    ![カスタム投稿編集ページ（イベント日付入力機能付き）](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event4.jpg)
+    ![カスタム投稿編集ページ、イベント日付入力機能付き](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event4.jpg)
 <br><br>
 
 🏞️ **wordpressのイメージ**
