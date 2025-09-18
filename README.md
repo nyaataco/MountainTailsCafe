@@ -30,45 +30,32 @@ WordPress、Astraのテーマをカスタマイズしました。
 
 🧩**管理画面のイメージ**
 <br>
-<div>
-    <p>イベント一覧 (カスタム投稿) :</p>
-    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event.jpg" width="80%" alt="イベント一覧 (カスタム投稿)のイメージ" />
-</div>
+### イベント一覧 (カスタム投稿) :  
+    ![イベント一覧 (カスタム投稿)](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event.jpg)
 <br><br>
-<div>
-    <p>イベントカテゴリー (カスタムカテゴリー) :</p>
-    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event2.jpg" width="80%" alt="イベントカテゴリー(カスタムカテゴリー)のイメージ" />
-</div>
+### イベントカテゴリー (カスタムカテゴリー) :  
+    ![イベントカテゴリー (カスタムカテゴリー)](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event2.jpg)
 <br><br>
-<div>
-    <p>カテゴリー編集ページ（画像アップ機能付き）:</p>
-    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event3.jpg" width="80%" alt="カテゴリー編集ページ（画像アップ機能付き）のイメージ" />
-</div>
+### カテゴリー編集ページ（画像アップ機能付き）:  
+    ![カテゴリー編集ページ（画像アップ機能付き）](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event3.jpg)
 <br><br>
-<div>
-    <p>カスタム投稿編集ページ（イベント日付入力機能付き）:</p>
-    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event4.jpg" width="80%" alt="カスタム投稿編集ページ（イベント日付入力機能付き）のイメージ" />
-</div>
+### カスタム投稿編集ページ（イベント日付入力機能付き）:  
+    ![カスタム投稿編集ページ（イベント日付入力機能付き）](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event4.jpg)
 <br><br>
 
 🏞️ **wordpressのイメージ**
 <br>
-<div>
-    <p>
-        taxonomy-event_category.php:<br>親テーマを引き継ぎつつEvent Date表示エリアを追加
-    </p>
-    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/taxonomy-event_category.jpg" width="80%" alt="taxonomy-event_category.phpのイメージ" />
-</div>
+### taxonomy-event_category.php:  
+親テーマを引き継ぎつつEvent Date表示エリアを追加  
+    ![taxonomy-event_category.php](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/taxonomy-event_category.jpg)
 <br><br>
-<div>
-     <p>archive-event.php:<br>好きな画像を設定できます。画像がなければsample-image.jpgを表示</p>
-    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/archive-event.jpg" width="80%" alt="archive-event.phpのイメージ" />
-</div>
+### archive-event.php:  
+好きな画像を設定できます。画像がなければsample-image.jpgを表示  
+    ![archive-event.php](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/archive-event.jpg)
 <br><br>
-<div>
-     <p>single-event.php:<br>設定した日付とアイキャッチ画像を含んだ内容が投稿されます</p>
-    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/single-event.jpg" width="80%" alt="single-event.phpのイメージ" />
-</div>
+### single-event.php:  
+設定した日付とアイキャッチ画像を含んだ内容が投稿されます  
+    ![single-event.php](https://github.com/nyaataco/MountainTailsCafe/blob/main/images/single-event.jpg)
 <br><br>
 
 ※ このサイトはポートフォリオ作成のためのもので、実在する店舗ではありません。  
@@ -80,7 +67,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 
 - ブロックエディタの使い方、サイトのデザインは[WordPress for Beginners: The Complete 2024 Master Class](https://www.udemy.com/course/wordpress-for-beginners-the-complete-2019-wordpress-guide/?srsltid=AfmBOopa9PHOUjp1yTAU0-mgcL3QsbAvhoZ2r616mu-TsvPkbAOE1wbK&couponCode=PMNVD2525) で学習、作成したものをカスタマイズしました。
 - PHPカスタマイズは、Astraの親テーマ、他のwordpressテーマのコードを参考にしました。
-- コンテンツの文章はCopilotを活用して作成しています。
+- サンプルテキストはCopilotを活用して作成しています。
 
 ---
 
