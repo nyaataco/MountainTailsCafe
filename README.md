@@ -1,7 +1,7 @@
 # WordPressカスタマイズ(astra-child)
 
 WordPress、Astraのテーマをカスタマイズしました。  
-カスタム投稿タイプ、カスタムタクソノミーを追加、それに伴ったcategory, archive, singleページを作成、スタイルを調整しています。  
+カスタム投稿タイプ、カスタムタクソノミーを追加、伴ってcategory, archive, singlページ を作成、スタイルを調整しています。  
 架空の「ペットと一緒に行ける山のカフェ」をテーマに、イベント情報の管理などを実装しています。
 
 ---
@@ -12,7 +12,21 @@ WordPress、Astraのテーマをカスタマイズしました。
 - カスタム投稿タイプ「event」＋カスタムタクソノミー「event_category」
 - アイキャッチ画像の登録・プレビュー機能（JavaScript＋WordPressメディアアップローダー）
 - WordPress管理画面のカスタマイズ（カテゴリー編集画面に画像フィールド追加）
-- もともとのテーマのデザイン調整はstyle.css、追加したEventカテゴリー関係はcustom.css, custom_admin.cssでスタイル調整しています。
+- フロント画面のデザイン調整（style.css、custom.css）
+- 管理画面のスタイル調整（custom_admin.css）
+
+
+---
+
+## ファイル構成
+
+- `functions.php`：カスタム投稿タイプ、カスタムタクソノミーの登録
+- `js/custom-taxonomy-image-upload.js`：画像アップロード・プレビュー・削除機能
+- `taxonomy-event_category.php`：イベントカテゴリーごとの一覧ページ
+- `archive-event.php`：カテゴリー内のイベント一覧ページ
+- `single-event.php`：イベント詳細ページ
+- `custom.css`：イベント関連のスタイル
+- `custom_admin.css`：管理画面のスタイル
 
 
 ---
@@ -20,9 +34,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 ## 技術スタック
 
 - WordPress（ブロックエディタ + PHP）
-- HTML / CSS / JavaScript / jQuery
-- Photoshop (写真の補正)
-- Illustrator (sample素材の作成)
+- HTML / CSS / JavaScript 
 
 ---
 
@@ -30,11 +42,11 @@ WordPress、Astraのテーマをカスタマイズしました。
 
 🧩**管理画面のイメージ**
 <br>
-<div>
+<!-- <div>
     <p>イベント一覧 (カスタム投稿) :</p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event.jpg" alt="イベント一覧 (カスタム投稿)のイメージ" />
 </div>
-<br><br>
+<br><br> -->
 <div>
     <p>イベントカテゴリー (カスタムカテゴリー) :</p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event2.jpg" alt="イベントカテゴリー(カスタムカテゴリー)のイメージ" />
@@ -78,7 +90,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 
 ## その他
 
-- ブロックエディタの使い方、サイトのデザインは[WordPress for Beginners: The Complete 2024 Master Class](https://www.udemy.com/course/wordpress-for-beginners-the-complete-2019-wordpress-guide/?srsltid=AfmBOopa9PHOUjp1yTAU0-mgcL3QsbAvhoZ2r616mu-TsvPkbAOE1wbK&couponCode=PMNVD2525) で学習、作成したものをカスタマイズしました。
+<!-- - ブロックエディタの使い方、サイトのデザインは[WordPress for Beginners: The Complete 2024 Master Class](https://www.udemy.com/course/wordpress-for-beginners-the-complete-2019-wordpress-guide/?srsltid=AfmBOopa9PHOUjp1yTAU0-mgcL3QsbAvhoZ2r616mu-TsvPkbAOE1wbK&couponCode=PMNVD2525) で学習、作成したものをカスタマイズしました。 -->
 - PHPカスタマイズは、Astraの親テーマ、他のwordpressテーマのコードを参考にしました。
 - サンプルテキストはCopilotを活用して作成しています。
 

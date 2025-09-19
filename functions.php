@@ -4,7 +4,7 @@ function astra_child_enqueue_styles() {
     wp_enqueue_style( 'astra-child-style', get_stylesheet_uri(), array( 'astra-theme-css' ), '1.0.0' );
 }
 
-// 追加したページ用css
+// Eventカテゴリー用css
 function custom_styles() {
   wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/custom.css' );
 }
@@ -30,56 +30,6 @@ function custom_taxonomy_image_upload() {
     );
 };
 add_action( 'admin_enqueue_scripts', 'custom_taxonomy_image_upload' );
-
-
-// カスタムカテゴリーに画像を追加
-add_action('event_category_add_form_fields', function () {
-    ?>   
-    <div class="form-field">
-        <label for="term_image">画像</label>
-        <div class="term_image_preview"></div>
-        <input type="text" name="term_image" id="term_image" value="" />
-        <button class="upload_image_button button button-primary" type="button">画像を選択</button>
-        <button class="remove_image_button button" type="button">画像を削除</button>
-        <p class="description">画像のURLを入力するか、ボタンで選択してください。</p>
-    </div>
-    <?php
-});
-
-// 編集画面
-add_action('event_category_edit_form_fields', function ($term) {
-    $image = get_term_meta($term->term_id, 'term_image', true);
-    ?>
-    <tr class="form-field">
-        <th scope="row"><label for="term_image">画像URL</label></th>
-        <td>
-            <div class="term_image_preview">
-                <?php if ($image): ?>
-                    <img src="<?php echo esc_url($image)?>">; 
-                <?php endif; ?>
-            </div>
-            <input type="text" name="term_image" id="term_image" value="<?php echo esc_attr($image); ?>" />
-            <button class="upload_image_button button button-primary" type="button">画像を選択</button>
-            <button class="remove_image_button button" type="button">画像を削除</button>
-            <p class="description">画像のURLを入力するか、ボタンで選択してください。</p>
-        </td>
-    </tr>
-    <?php
-});
-
-// 保存処理
-add_action('created_event_category', function ($term_id) {
-    if (isset($_POST['term_image'])) {
-        update_term_meta($term_id, 'term_image', sanitize_text_field($_POST['term_image']));
-    }
-});
-
-add_action('edited_event_category', function ($term_id) {
-    if (isset($_POST['term_image'])) {
-        update_term_meta($term_id, 'term_image', sanitize_text_field($_POST['term_image']));
-    }
-});
-
 
 
 // カスタム投稿 『Event』
@@ -129,6 +79,51 @@ function MTC_init() {
 
 }
 add_action('init', 'MTC_init');
+
+
+// カスタムタクソノミーに画像を追加
+add_action('event_category_add_form_fields', function () {
+    ?>   
+    <div class="form-field">
+        <label for="term_image">画像</label>
+        <div class="term_image_preview"></div>
+        <input type="text" name="term_image" id="term_image" value="" />
+        <button class="upload_image_button button button-primary" type="button">画像を選択</button>
+        <button class="remove_image_button button" type="button">画像を削除</button>
+        <p class="description">画像のURLを入力するか、ボタンで選択してください。</p>
+    </div>
+    <?php
+});
+
+// 編集画面
+add_action('event_category_edit_form_fields', function ($term) {
+    $image = get_term_meta($term->term_id, 'term_image', true);
+    ?>
+    <tr class="form-field">
+        <th scope="row"><label for="term_image">画像URL</label></th>
+        <td>
+            <div class="term_image_preview">
+                <?php if ($image): ?>
+                    <img src="<?php echo esc_url($image)?>">; 
+                <?php endif; ?>
+            </div>
+            <input type="text" name="term_image" id="term_image" value="<?php echo esc_attr($image); ?>" />
+            <button class="upload_image_button button button-primary" type="button">画像を選択</button>
+            <button class="remove_image_button button" type="button">画像を削除</button>
+            <p class="description">画像のURLを入力するか、ボタンで選択してください。</p>
+        </td>
+    </tr>
+    <?php
+});
+
+// 保存処理
+function save_event_category_image($term_id) {
+    if (isset($_POST['term_image'])) {
+        update_term_meta($term_id, 'term_image', sanitize_text_field($_POST['term_image']));
+    }
+}
+add_action('created_event_category', 'save_event_category_image');
+add_action('edited_event_category', 'save_event_category_image');
 
 
 // カスタムメタボックスで日付を追加
