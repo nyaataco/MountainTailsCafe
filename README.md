@@ -48,17 +48,17 @@ WordPress、Astraのテーマをカスタマイズしました。
 </div>
 <br><br> -->
 <div>
-    <p>イベントカテゴリー (カスタムカテゴリー) :</p>
+    <p>イベントカテゴリー (カスタムカテゴリー) :<br>画像アップ機能を追加</p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event2.jpg" alt="イベントカテゴリー(カスタムカテゴリー)のイメージ" />
 </div>
 <br><br>
 <div>
-    <p>カテゴリー編集ページ（画像アップ機能付き）:</p>
+    <p>カテゴリー編集ページ:<br>画像アップ、プレビュー、削除機能追加</p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event3.jpg" alt="カテゴリー編集ページ（画像アップ機能付き）のイメージ" />
 </div>
 <br><br>
 <div>
-    <p>カスタム投稿編集ページ（イベント日付入力機能付き）:</p>
+    <p>カスタム投稿編集ページ:<br>イベント日付入力機能付き</p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event4.jpg" alt="カスタム投稿編集ページ（イベント日付入力機能付き）のイメージ" />
 </div>
 <br><br>
@@ -66,19 +66,19 @@ WordPress、Astraのテーマをカスタマイズしました。
 🏞️ **wordpressのイメージ**
 <br>
 <div>
+     <p>archive-event.php:<br>Eventカテゴリー一覧ページ。リンクで各カテゴリー内の記事一覧へ。<br>好きな画像を設定できます。画像がなければsample-image.jpgを表示。</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/archive-event.jpg" alt="archive-event.phpのイメージ" />
+</div>
+<br><br>
+<div>
     <p>
-        taxonomy-event_category.php:<br>親テーマを引き継ぎつつEvent Date表示エリアを追加
+        taxonomy-event_category.php:<br>Event各カテゴリー内の記事一覧。<br>親テーマを引き継ぎつつEvent Date表示エリアを追加しました。
     </p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/taxonomy-event_category.jpg" alt="taxonomy-event_category.phpのイメージ" />
 </div>
 <br><br>
 <div>
-     <p>archive-event.php:<br>好きな画像を設定できます。画像がなければsample-image.jpgを表示</p>
-    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/archive-event.jpg" alt="archive-event.phpのイメージ" />
-</div>
-<br><br>
-<div>
-     <p>single-event.php:<br>設定した日付とアイキャッチ画像を含んだ内容が投稿されます</p>
+     <p>single-event.php:<br>カスタム投稿WEventの個別投稿ページ。<br>設定した日付とアイキャッチ画像を含んだ内容が投稿されます。</p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/single-event.jpg" alt="single-event.phpのイメージ" />
 </div>
 <br><br>
