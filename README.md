@@ -40,7 +40,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 ---
 
 ## images
-<br><br>
+<br>
 
 🧩**管理画面のイメージ**
 <br>
@@ -92,6 +92,14 @@ WordPress、Astraのテーマをカスタマイズしました。
         <b>single-event.php:</b><br>カスタム投稿WEventの個別投稿ページ。<br>設定した日付とアイキャッチ画像を含んだ内容が投稿されます。
      </p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/single-event.jpg" alt="single-event.phpのイメージ" />
+</div>
+<br><br>
+
+🧩**カスタム投稿Newsも追加しています**
+<br>
+<div>
+    <p>News(カスタム投稿) :</p>
+    <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/news.jpg" alt="News (カスタム投稿)のイメージ" />
 </div>
 <br><br>
 
