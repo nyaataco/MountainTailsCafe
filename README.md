@@ -9,7 +9,8 @@ WordPress、Astraのテーマをカスタマイズしました。
 ## 概要
 
 - Astraテーマ＋Spectraプラグインをベースに構築
-- カスタム投稿タイプ「event」＋カスタムタクソノミー「event_category」
+- カスタム投稿タイプ「News」＋カスタムタクソノミー「news_category」
+- カスタム投稿タイプ「Event」＋カスタムタクソノミー「event_category」
 - アイキャッチ画像の登録・プレビュー機能（JavaScript＋WordPressメディアアップローダー）
 - WordPress管理画面のカスタマイズ（カテゴリー編集画面に画像フィールド追加）
 - フロント画面のデザイン調整（style.css、custom.css）
