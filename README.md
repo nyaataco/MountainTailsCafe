@@ -39,6 +39,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 ---
 
 ## images
+<br><br>
 
 🧩**管理画面のイメージ**
 <br>
@@ -56,7 +57,7 @@ WordPress、Astraのテーマをカスタマイズしました。
 <br><br>
 <div>
     <p>
-        <b>カテゴリー編集ページ:</b><br>画像アップ、プレビュー、削除機能追加
+        <b>カテゴリー編集ページ:</b><br>画像アップ、プレビュー、削除
     </p>
     <img src="https://github.com/nyaataco/MountainTailsCafe/blob/main/images/admin_custom-category-event3.jpg" alt="カテゴリー編集ページ（画像アップ機能付き）のイメージ" />
 </div>

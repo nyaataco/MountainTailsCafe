@@ -63,7 +63,8 @@ function MTC_init() {
 		'capability_type' => 'post',
 		'has_archive' => true,
 		'hierarchical' => false,
-		'supports' => array( 'title', 'editor', 'thumbnail' )
+        'show_in_rest' => true,
+		'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields')
  	) );
 
 	// カスタムタクソノミー "event > category"
@@ -168,3 +169,50 @@ function mtc_move_featured_image_meta_box() {
     );
 }
 add_action( 'do_meta_boxes', 'mtc_move_featured_image_meta_box' );
+
+
+// カスタム投稿 『News』
+function News_init() {
+
+	$news_labels = array(
+        'name' => 'News',
+        'all_items' => 'お知らせ一覧',
+        'add_new' => '新規追加',
+        'add_new_item' => '新しいお知らせを追加',
+        'edit_item' => 'お知らせを編集',
+        'new_item' => '新しいお知らせ',
+        'view_item' => 'お知らせを見る',
+        'search_items' => 'お知らせを検索',
+        'not_found' => 'お知らせが見つかりませんでした',
+        'not_found_in_trash' => 'ゴミ箱にお知らせはありません',
+        'parent_item_colon' => ''
+	);
+
+	register_post_type( 'news', array(
+		'label' => 'News',
+		'labels' => $news_labels,
+		'public' => true,
+		'publicly_queryable' => true,
+		'menu_position' => 5,
+		'show_ui' => true,
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'news' ),
+		'capability_type' => 'post',
+		'has_archive' => true,
+		'hierarchical' => false,
+        'show_in_rest' => true,
+		'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields')
+ 	) );
+
+    $news_category_labels = array(
+        'name' => 'ニュースカテゴリー',
+        'singular_name' => 'ニュースカテゴリー',
+	);
+	register_taxonomy( 'news_category', 'news', array(
+		'labels' => $news_category_labels,
+		'hierarchical' => true,
+		'show_admin_column' => true,
+	) );
+
+}
+add_action('init', 'News_init');
